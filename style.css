@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EFF1FA;
+  font-family: Poppins, sans-serif;
+}
+
+.main {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#a-logo{
+  margin: auto;
+  padding-top: 2.5vw;
+  margin-left: 20vh;
+}
+
+.titulo {
+  padding: 15px;
+  width: 20vw;
+  
+  justify-content: center;
+  margin: auto;
+  color:#757FB2;
+
+}
+
+.form-box{
+  width: 30vw;
+}
+
+.msg-box {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 0.5em;
+  width: 20vw;
+  height: auto;
+  outline: none;
+}
+
+.btnEncrypt , .btnCopy {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: #0A3871;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+  width:8rem;
+}
+.btnEncrypt:hover,
+.btnCopy:hover {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: #757FB2;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+  width:8rem;
+}
+
+.btnDecrypt {
+  border: 0;
+  color: #052051;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+  border-color: #052051;
+  width:8rem;
+}
+.btnDecrypt:hover {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: #CED4DA;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+  border-color: #052051;
+  width:8rem;
+}
+.text-input {
+  border-radius: 0.5em;
+  border: none;
+  background-color: #EFF1FA;
+  overflow: hidden;
+  font-size: 1.5rem;
+  color:#757FB2;
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  height: 50vh;
+  outline: none;
+}
+
+label{
+  font-size: 0.85rem;
+  color: #787e96;
+}
+
+@media (max-width: 675px) {
+
+  .main {
+    
+    margin: auto;
+    display: flex;
+    
+    display: block; 
+    flex-direction: column;
+    
+    justify-content: center;
+    
+  }
+  .msg-box, .form-box {
+    width: 70vw;
+    margin-bottom: 3rem;
+  }
+  #a-logo{
+    margin: auto;
+    padding-top: 2.5vw;
+    margin-left: 10vh;
+  }
+
+  .titulo {
+    padding: 20px;
+    width: 40vw;
+    
+    justify-content: center;
+    margin: auto;
+    color:#757FB2;
+  
+  }
+  
+
+}

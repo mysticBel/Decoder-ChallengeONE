@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+</head>
+<body>
+  <img src="./logo.jpg" id="a-logo" alt="logo">
+  <h1 class="titulo">Cipher App</h1>
+
+  <main class="main">
+    <section class="form box form-box">
+      <form action="">
+        
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+        <label for="input-texto"><box-icon  class="box-icon" name='error-circle' type='solid' color='#495057' size="1rem" ></box-icon>Solo letras minúsculas, sin acento</label>
+        <div>
+        <input class="btnEncrypt" type="submit" value="encriptar!" id="btn-encriptar">
+        <input class="btnDecrypt" type="submit" value="desencriptar!" id="btn-desencriptar">
+        </div>
+      </form>
+    </section>
+  
+    <section class="msg box msg-box">
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="btn btnCopy" type="submit" value="copiar" id="btn-copy">
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
