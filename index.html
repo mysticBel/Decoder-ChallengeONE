@@ -9,9 +9,11 @@
   <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
 
 </head>
-<body>
-  <img src="./logo.jpg" id="a-logo" alt="logo">
+<body>  
+  <header>
+  <a href="https://www.aluracursos.com/" target="_blank" rel="noopener noreferrer"><img src="./logo.jpg" id="a-logo" alt="logo-alura"></a>
   <h1 class="titulo">Cipher App</h1>
+  </header>
 
   <main class="main">
     <section class="form box form-box">
@@ -19,7 +21,7 @@
         
         <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
         <label for="input-texto"><box-icon  class="box-icon" name='error-circle' type='solid' color='#495057' size="1rem" ></box-icon>Solo letras minúsculas, sin acento</label>
-        <div>
+        <div class="btn-div">
         <input class="btnEncrypt" type="submit" value="encriptar!" id="btn-encriptar">
         <input class="btnDecrypt" type="submit" value="desencriptar!" id="btn-desencriptar">
         </div>
