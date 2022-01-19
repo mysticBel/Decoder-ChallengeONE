@@ -4,16 +4,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Decoder</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
 
 </head>
-<body>  
+<body> 
+  <div class="container">
+   <nav id="navbar">
+    <ul>
+  
+    
+       <li><a class="nav-link" href="#welcome-section">About Challenge</a></li>
+       <li><a class="nav-link" href="#projects">About Me</a></li>
+       <li><a class="nav-link" href="#profile-links">Contact</a></li>
+     </ul>
+   </nav>
+</div>
   <header>
-  <a href="https://www.aluracursos.com/" target="_blank" rel="noopener noreferrer"><img src="./logo.jpg" id="a-logo" alt="logo-alura"></a>
-  <h1 class="titulo">Cipher App</h1>
+    <a href="https://www.aluracursos.com/" target="_blank" rel="noopener noreferrer"><img src="./Vector.svg" id="a-logo" alt="logo-alura"></a>
+    <h1 class="titulo">Alura Cipher App</h1>
+  
   </header>
+  
 
   <main class="main">
     <section class="form box form-box">
@@ -22,15 +35,16 @@
         <!-- <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui"> -->
         <label for="input-texto"><box-icon  class="box-icon" name='error-circle' type='solid' color='#495057' size="1rem" ></box-icon>Solo letras minúsculas, sin acento</label>
         <div class="btn-div">
-        <input class="btnEncrypt" type="button" value="encriptar" id="btn-encriptar">
-        <input class="btnDecrypt" type="button" value="desencriptar" id="btn-desencriptar">
+        <input class="btn btnEncrypt" type="button" value="encriptar" id="btn-encriptar">
+        <input class="btn btnDecrypt" type="button" value="desencriptar" id="btn-desencriptar">
         </div>
       </form>
     </section>
   
     <section class="msg box msg-box">
-      <textarea class="text-input" rows="10" cols="10"   id="msg"></textarea>
+      <textarea class="text-msg" rows="10" cols="10"   id="msg"></textarea>
       <input class="btn btnCopy" type="submit" value="copiar" id="btn-copy">
+      <div id="texto-copiado" ></div>
     </section>
   </main>
 
