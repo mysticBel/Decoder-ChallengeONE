@@ -24,8 +24,9 @@ body {
   margin-left: 20vh;
 }
 
+
 .titulo {
-  padding: 15px;
+  padding-bottom: 3rem;
   width: 20vw;
   
   justify-content: center;
@@ -44,12 +45,16 @@ body {
   text-align: center;
 }
 
+.btn:hover {
+ cursor: pointer;
+}
+
 .msg-box {
   padding: 10px;
   margin: 0 10px 0 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: white;
-  border-radius: 0.5em;
+  background-color: rgb(192, 206, 236);
+  border-radius: 0.8em;
   width: 20vw;
   height: auto;
   outline: none;
@@ -61,7 +66,7 @@ body {
   border: 0;
   color: white;
   font-weight: bold;
-  background-color: #1d3f68;
+  background-color: #3f5c80;
   padding: 10px;
   margin-top: 10px;
   border-radius: 2rem;
@@ -71,21 +76,31 @@ body {
 
 .btnCopy{
   
-  background-color: #757FB2;
+  background-color: #9fa7d1;
   
 }
-.btnEncrypt:hover,
-.btnCopy:hover {
+.btnEncrypt:hover
+ {
   border: 0;
   color: white;
   font-weight: bold;
-  background-color: #757FB2;
+  background-color: #283057;
   padding: 10px;
   border-radius: 2rem;
   width:15rem;
   line-height: 1.5rem;
 }
+.btnCopy:hover{
 
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: #606aa3;
+  padding: 10px;
+  border-radius: 2rem;
+  width:15rem;
+  line-height: 1.5rem;
+}
 .btnDecrypt {
   border: 0;
   color: #052051;
@@ -99,9 +114,8 @@ body {
 }
 .btnDecrypt:hover {
   border: 0;
-  color: white;
   font-weight: bold;
-  background-color: #CED4DA;
+  background-color: #dee9f5;
   padding: 10px;
   margin-top: 10px;
   border-radius: 2rem;
@@ -113,8 +127,25 @@ body {
   border: none;
   background-color: #EFF1FA;
   overflow: hidden;
+  font-family: Poppins, sans-serif;
   font-size: 1.5rem;
-  color:#757FB2;
+  color:#363d61d5;
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  height: 60vh;
+  outline: none;
+}
+
+.text-msg {
+  border-radius: 0.5em;
+  border: none;
+  /* background-color: #EFF1FA;*/
+  background-color: #ffffff; 
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  color:#363d61d5;
   display: block;
   padding: 0.5em;
   width: 100%;
@@ -126,6 +157,69 @@ label{
   font-size: 0.85rem;
   color: #787e96;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #606dac;
+  font-family: Poppins, sans-serif;
+  opacity: 0.5; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #757FB2;
+  font-family: Poppins, sans-serif;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #757FB2;
+  font-family: Poppins, sans-serif;
+}
+
+
+
+.container {
+  background-color:#abb4f54b;
+  height: 30px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transition: top 0.3s;
+  width: 100%;
+  margin: 0;  
+}
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transition: top 0.3s;
+  width: 100%;
+  height: 50px;
+  margin: 0;   
+}
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  
+  
+}
+
+#navbar li {
+  list-style: none;
+  padding-right: 3rem;
+ 
+}
+#navbar a {
+  text-decoration: none;
+  color: rgb(108, 121, 158);
+  cursor: pointer;
+  justify-content:center;
+  align-items:center;
+}
+#navbar a:hover,
+#navbar a:focus {
+  color: #0628a3;
+}
+
+
 
 @media (max-width: 675px) {
 
